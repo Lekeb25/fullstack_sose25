@@ -2,13 +2,20 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.ts",
-  "scripts": {
+  "//scripts This is the old version of scripts": {
     "test": "cross-env NODE_ENV=test jest",
     "start": "npm run initdb && ts-node src/index.ts",
     "initdb": "ts-node src/scripts/initmongodb.ts",
     "serve": "ts-node src/index.ts",
     "dev": "nodemon src/index.ts",
-    "seed:products": "ts-node src/scripts/seed-products.ts"
+    "seed:products": "ts-node src/scripts/seed-products.ts",
+    "build": "tsc"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/src/index.js"
   },
   "keywords": [],
   "author": "",

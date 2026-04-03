@@ -1,24 +1,23 @@
-import { Sequelize } from "sequelize";
-import dotenv from "dotenv";
-
-dotenv.config();
-
-
-const sequelize = new Sequelize(process.env.DATABASE_URL as string, {
-  dialect: "postgres",
-  protocol: "postgres",
-  logging: false,
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false,
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const sequelize_1 = require("sequelize");
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
+const sequelize = new sequelize_1.Sequelize(process.env.DATABASE_URL, {
+    dialect: "postgres",
+    protocol: "postgres",
+    logging: false,
+    dialectOptions: {
+        ssl: {
+            require: true,
+            rejectUnauthorized: false,
+        },
     },
-  },
 });
-
-export default sequelize;
-
-
+exports.default = sequelize;
 /* import { Sequelize } from "sequelize";
 import dotenv from "dotenv";
 
@@ -69,4 +68,4 @@ if (process.env.NODE_ENV !== "test") {
 
 export default sequelize;
 
-*/
+*/ 

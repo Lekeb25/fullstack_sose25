@@ -3,14 +3,15 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+
 const connectMongoDB = async (): Promise<void> => {
   const mongoURI: string =
     process.env.MONGO_URI || "mongodb://localhost:27017/skincare";
 
   try {
     await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+      // useNewUrlParser: true,
+      //useUnifiedTopology: true,
       serverSelectionTimeoutMS: 5000,
     } as mongoose.ConnectOptions);
 
