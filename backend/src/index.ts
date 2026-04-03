@@ -60,9 +60,11 @@ app.get("/api/test", (_req: Request, res: Response) => {
 (async () => {
   try {
     
-    await seedIfEmpty();
+    await connectMongoDB();
 
-    connectMongoDB();
+    // await seedIfEmpty();
+
+    
 
     await sequelize.sync({ alter: true });
     console.log("All tables created or updated.");
