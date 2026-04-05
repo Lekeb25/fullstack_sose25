@@ -15,6 +15,7 @@ import quizRoutes from "./routes/quiz.Routes";
 import skinAnalysisRoutes from "./routes/skinAnalysis.Routes";
 import warenkorbRoutes from "./routes/warenkorb.Routes";
 import seedIfEmpty from "./scripts/initmongodb";
+import seedProducts from "./scripts/seed-products"
 
 const app: Express = express();
 const PORT: number = Number(process.env.PORT) || 3000;
@@ -62,7 +63,9 @@ app.get("/api/test", (_req: Request, res: Response) => {
     
     await connectMongoDB();
 
-    // await seedIfEmpty();
+    await seedProducts();
+
+    //await seedIfEmpty();
 
     
 

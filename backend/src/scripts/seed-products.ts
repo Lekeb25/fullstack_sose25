@@ -113,9 +113,15 @@ const products: ProductSeedInput[] = [
 
 const seedProducts = async (): Promise<void> => {
   try {
-    console.log(" Connecting to MongoDB...");
-    await mongoose.connect(process.env.MONGO_URI || "");
-    console.log(" Connected to MongoDB");
+    console.log(" Seeding products...");
+    // await mongoose.connect(process.env.MONGO_URI || "");
+    
+    const count = await ProductItem.countDocuments();
+    if (count > 0) {
+      console.log("Products already exist, skipping seed");
+      return;
+    }
+
 
     for (const product of products) {
       const exists = await ProductItem.findOne({ p_name: product.p_name });
@@ -130,10 +136,7 @@ const seedProducts = async (): Promise<void> => {
     console.log(" Seeding complete!");
   } catch (error) {
     console.error(" Error seeding products:", error);
-  } finally {
-    await mongoose.disconnect();
-    process.exit();
   }
 };
 
-seedProducts();
+export default seedProducts;
