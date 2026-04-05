@@ -19,7 +19,7 @@ import seedIfEmpty from "./scripts/initmongodb";
 const app: Express = express();
 const PORT: number = Number(process.env.PORT) || 3000;
 
-const allowedOrigins = ["http://localhost:4200", "http://localhost:8080", "https://ton-site.netlify.app"];
+const allowedOrigins = ["http://localhost:4200", "http://localhost:8080", "https://davinshop.netlify.app"];
 
 app.use(
   cors({
