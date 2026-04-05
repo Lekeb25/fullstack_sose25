@@ -20,8 +20,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "trocken",
     effect: "Hydratation",
     price: 19.99,
-    image_url:
-      "https://cdn.shopify.com/s/files/1/0274/9503/9079/files/hydrating_face_cream.jpg?v=1723650067",
+    image_url:  "https://i.ibb.co/0Rr1JjMX/Screenshot-2025-07-06-173602.png",
   },
   {
     p_name: "Daily UV Protect Set",
@@ -29,7 +28,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "fettig",
     effect: "Mattierend",
     price: 44.9,
-    image_url: "https://ibb.co/KtgypxX",
+    image_url: "https://i.ibb.co/MzHNxks/Daily-UVProtect-Set.png",
   },
   {
     p_name: "Purifying Gel Cleanser",
@@ -37,7 +36,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "normal",
     effect: "Anti-Age",
     price: 28.67,
-    image_url: "https://ibb.co/LD4XxVrM",
+    image_url: "https://i.ibb.co/TDzx491Z/Purifying-Gel-Cleanser.png",
   },
   {
     p_name: "Double Cleansing Set",
@@ -45,7 +44,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "misch",
     effect: "Beruhigend",
     price: 35.01,
-    image_url: "https://ibb.co/pjTv6T7v",
+    image_url: "https://i.ibb.co/VYGW0G1W/Double-Cleansing-Set.png",
   },
   {
     p_name: "Niacinamide Booster",
@@ -53,7 +52,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "misch",
     effect: "Beruhigend",
     price: 32.95,
-    image_url: "https://ibb.co/Jj8GmZkz",
+    image_url: "https://i.ibb.co/C3YkdCJq/Screenshot-2025-06-26-222924.png",
   },
   {
     p_name: "Calming Moisturizer",
@@ -62,7 +61,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "misch",
     effect: "Hydratation",
     price: 26.95,
-    image_url: "https://ibb.co/SwfsmJnG",
+    image_url: "https://i.ibb.co/xqFCg3jd/Calming-Moisturizer.png",
   },
   {
     p_name: "BYOMA Hydrating Serum",
@@ -71,7 +70,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "trocken",
     effect: "Hydratation",
     price: 26.95,
-    image_url: "https://ibb.co/r2m2v8Gs",
+    image_url: "https://i.ibb.co/m5G5SZC8/BYOMA.png",
   },
   {
     p_name: "LANEIGE Trio aufpolsternd",
@@ -80,7 +79,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "trocken",
     effect: "Hydratation",
     price: 26.95,
-    image_url: "https://ibb.co/1tH4ttb0",
+    image_url: "https://i.ibb.co/ZpybppNf/LANEIGE.png",
   },
   {
     p_name: "Banana Bright",
@@ -89,7 +88,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "trocken",
     effect: "Hydratation",
     price: 39.5,
-    image_url: "https://ibb.co/nsD0JLdP",
+    image_url: "https://i.ibb.co/Z6hJDM42/Banana-Bright.png",
   },
   {
     p_name: "INNISFREE mit Hyaluronsäure",
@@ -98,7 +97,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "trocken",
     effect: "Hydratation",
     price: 39.5,
-    image_url: "https://ibb.co/Y7yyWB6M",
+    image_url: "https://i.ibb.co/JRyydjN4/INNISFREE.png",
   },
   {
     p_name: "GLOW RECIPE",
@@ -107,7 +106,7 @@ const products: ProductSeedInput[] = [
     skin_typ_target: "trocken",
     effect: "Hydratation",
     price: 20.95,
-    image_url: "https://ibb.co/cSRbDwcR",
+    image_url: "https://i.ibb.co/1tBs8MfB/GLOWRECIPE.png",
   },
 ];
 
